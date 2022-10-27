@@ -19,7 +19,7 @@ console.log(calcArea(51,1));
 
 // Desafio 3
 function splitSentence(splits) {
-    let frase = 'go Trybe';
+    let frase = 'vamo que vamo';
     let arrayDeFrase = frase.split(" ");
   
     return arrayDeFrase;
