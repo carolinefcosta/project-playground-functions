@@ -1,13 +1,13 @@
 // Desafio 1
 function compareTrue(animal1, animal2) {
 
-    if (animal1 === 'cachorro' && animal2 === 'leão'){
-        console.log('Eles são mamíferos!');
+    if (animal1 === 'cachorro' && animal2 === 'leao'){
+        console.log((true) + ' eles são mamíferos!');
     } else {
-        console.log('Huumm.. não são mamíferos');
+        console.log((false) + ' huumm.. não são mamíferos')
     }
 }
-console.log(compareTrue('cachorro', 'leão'));
+console.log(compareTrue('cachorro', 'leao'));
 
 // Desafio 2
 function calcArea(base, height) {
@@ -32,9 +32,13 @@ function concatName() {
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
-}
+function footballPoints(wins, ties) {
+    let resultado = 0;
+    resultado = (wins * 3) + ties;
+ 
+    return resultado;
+ }
+ console.log(footballPoints(14,8));
 
 // Desafio 6
 function highestCount() {
