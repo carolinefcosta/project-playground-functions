@@ -41,8 +41,6 @@ function highestCount(arrayNumbers) {
   }
   return quantidade;
 }
-//console.log(highestCount([10,10,5,3,10]));
-
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   let distancia1 = Math.abs(mouse - cat1);
@@ -55,11 +53,21 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'os gatos trombam e o rato foge';
   }
 }
-console.log(catAndMouse(1,2,3));
-
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(numeros) {
+  let arrayString = [];
+  for (let i = 0; i < numeros.length; i++){
+    if (numeros[i] % 3 === 0 && numeros[i] % 5 === 0) {
+      arrayString.push('fizzBuzz');
+    } else if (numeros[i] % 3 === 0) {
+        arrayString.push('fizz');
+    } else if (numeros[i] % 5 === 0) {
+      arrayString.push('buzz');
+    } else {
+      arrayString.push('bug!');
+    }
+  }
+  return arrayString;
 }
 
 // Desafio 9
