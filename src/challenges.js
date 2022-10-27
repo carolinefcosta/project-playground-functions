@@ -1,24 +1,30 @@
 // Desafio 1
-function compareTrue(idade, cnh) {
-  if (idade >= 18 && cnh === 'sim'){
-    console.log((true) + ', você pode dirigir!');
-  } else {
-    console.log((false) + ', você não pode dirigir');
-  }
+function compareTrue(animal1, animal2) {
+
+    if (animal1 === 'cachorro' && animal2 === 'leão'){
+        console.log('Eles são mamíferos!');
+    } else {
+        console.log('Huumm.. não são mamíferos');
+    }
 }
-console.log(compareTrue(22, 'sim'));
+console.log(compareTrue('cachorro', 'leão'));
 
 // Desafio 2
 function calcArea(base, height) {
   let area = base * height / 2;
+
   return area;
 }
 console.log(calcArea(51,1));
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
-}
+function splitSentence(splits) {
+    let frase = 'go Trybe';
+    let arrayDeFrase = frase.split(" ");
+  
+    return arrayDeFrase;
+  };
+  console.log(splitSentence());
 
 // Desafio 4
 function concatName() {
