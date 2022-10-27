@@ -1,7 +1,12 @@
 // Desafio 1
-function compareTrue() {
-  // Iniciando Projeto
+function compareTrue(idade, cnh) {
+  if (idade >= 18 && cnh === true){
+    console.log((true) + ' você pode dirigir!');
+  } else {
+    console.log((false) + ' você não pode dirigir');
+  }
 }
+console.log(compareTrue(18, true));
 
 // Desafio 2
 function calcArea() {
