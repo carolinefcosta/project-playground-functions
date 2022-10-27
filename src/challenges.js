@@ -1,13 +1,13 @@
 // Desafio 1
 function compareTrue(animal1, animal2) {
 
-    if (animal1 === 'cachorro' && animal2 === 'leao'){
-        console.log((true) + ' eles são mamíferos!');
+    if (animal1 === 'cachorro' && animal2 === 'leão'){
+      console.log("Eles são mamíferos");
     } else {
-        console.log((false) + ' huumm.. não são mamíferos')
+        console.log('Huumm.. não são mamíferos')
     }
 }
-console.log(compareTrue('cachorro', 'leao'));
+console.log(compareTrue('cachorro', 'gatos'));
 
 // Desafio 2
 function calcArea(base, height) {
@@ -27,9 +27,12 @@ function splitSentence(splits) {
   console.log(splitSentence());
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(arrayDeString) {
+  let array = [1, 2, 3, 4, 5];
+  let ultimo = array.length - 1;
+  console.log(array);
 }
+
 
 // Desafio 5
 function footballPoints(wins, ties) {
