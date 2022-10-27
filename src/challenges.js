@@ -1,33 +1,24 @@
 // Desafio 1
-function compareTrue(animal1, animal2) {
-
-    if (animal1 === 'cachorro' && animal2 === 'leão'){
-      console.log("Eles são mamíferos");
-    } else {
-        console.log('Huumm.. não são mamíferos')
-    }
+function compareTrue(a, b) {
+  if (a === true && b === true) {
+    return true;
+  } else {
+    return false;
+  }
 }
-console.log(compareTrue('cachorro', 'gatos'));
-
 // Desafio 2
 function calcArea(base, height) {
   let area = base * height / 2;
-
   return area;
 }
-console.log(calcArea(51,1));
-
 // Desafio 3
-function splitSentence(splits) {
-    let frase = 'vamo que vamo';
-    let arrayDeFrase = frase.split(" ");
-  
-    return arrayDeFrase;
-  };
-  console.log(splitSentence());
+function splitSentence(string) {
+  return string.split(' ');
+}
+console.log(splitSentence('go trybe')
 
 // Desafio 4
-function concatName(arrayDeString) {
+/*function concatName(arrayDeString) {
   let array = [1, 2, 3, 4, 5];
   let ultimo = array.length - 1;
   console.log(array);
