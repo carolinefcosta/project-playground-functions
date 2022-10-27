@@ -1,17 +1,19 @@
 // Desafio 1
 function compareTrue(idade, cnh) {
-  if (idade >= 18 && cnh === true){
-    console.log((true) + ' você pode dirigir!');
+  if (idade >= 18 && cnh === 'sim'){
+    console.log((true) + ', você pode dirigir!');
   } else {
-    console.log((false) + ' você não pode dirigir');
+    console.log((false) + ', você não pode dirigir');
   }
 }
-console.log(compareTrue(18, true));
+console.log(compareTrue(22, 'sim'));
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  let area = base * height / 2;
+  return area;
 }
+console.log(calcArea(51,1));
 
 // Desafio 3
 function splitSentence() {
