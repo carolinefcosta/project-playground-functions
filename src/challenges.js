@@ -33,9 +33,7 @@ function highestCount(arrayNumbers) {
   for (let i = 0; i < arrayNumbers.length; i +=1){
     if (arrayNumbers[i] > maiorNumero) {
       maiorNumero = arrayNumbers[i];
-      quantidade = 1;
-    } else if (arrayNumbers[i] === maiorNumero) {
-      quantidade ++;
+      quantidade += 1;
     }
   }
   return quantidade;
