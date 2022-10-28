@@ -116,17 +116,17 @@ function decode(frase) {
 // Desafio 10
 function techList(tecnologias, pessoa) {
   let objetos = [];
-  if (tecnologias === [] || pessoa === ''){
+  if (tecnologias.length === 0 || pessoa === ''){
     return 'Vázio!';
-  }else {
-    for (let i = 0; i < tecnologias.length; i++){
-      var meuObjeto = new Object();
-      meuObjeto.tech = tecnologias[i];
-      meuObjeto.name = pessoa;
-      objetos.push(meuObjeto);
-    }
-    return objetos; 
   }
+  let tecno = tecnologias.sort();
+  for (let i = 0; i < tecnologias.length; i++){
+      objetos.push({
+        tech: tecno[i],
+        name: pessoa,
+    })
+  }
+    return objetos; 
 }
 module.exports = {
   calcArea,
