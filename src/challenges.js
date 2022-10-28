@@ -41,6 +41,7 @@ function highestCount(arrayNumbers) {
   }
   return quantidade;
 }
+console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   let distancia1 = Math.abs(mouse - cat1);
@@ -113,10 +114,20 @@ function decode(frase) {
   return arrayFrase.join("");
 }
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(tecnologias, pessoa) {
+  let objetos = [];
+  if (tecnologias === [] || pessoa === ''){
+    return 'Vázio!';
+  }else {
+    for (let i = 0; i < tecnologias.length; i++){
+      var meuObjeto = new Object();
+      meuObjeto.tech = tecnologias[i];
+      meuObjeto.name = pessoa;
+      objetos.push(meuObjeto);
+    }
+    return objetos; 
+  }
 }
-
 module.exports = {
   calcArea,
   catAndMouse,
