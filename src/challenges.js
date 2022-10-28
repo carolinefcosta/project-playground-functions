@@ -30,7 +30,6 @@ function footballPoints(wins, ties) {
 function highestCount(arrayNumbers) {
   let maiorNumero = 0;
   let quantidade = 0;
-
   for (let i = 0; i < arrayNumbers.length; i +=1){
     if (arrayNumbers[i] > maiorNumero) {
       maiorNumero = arrayNumbers[i];
@@ -41,7 +40,6 @@ function highestCount(arrayNumbers) {
   }
   return quantidade;
 }
-console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   let distancia1 = Math.abs(mouse - cat1);
