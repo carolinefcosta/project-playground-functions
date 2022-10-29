@@ -1,6 +1,6 @@
 // Desafio 11
 function generatePhoneNumber(arrayTel) {
-  let numeroTel = '(84) 99614-5856';
+  let numeroTel = '(';
   if (arrayTel.length !== 11) {
     return 'Array com tamanho incorreto.';
   }
@@ -8,10 +8,18 @@ function generatePhoneNumber(arrayTel) {
     if (arrayTel[index] > 9 || arrayTel[index] < 0) {
       return 'não é possível gerar um número de telefone com esses valores';
     }
-    numeroTel = numeroTel.replace('1', arrayTel[index]);
+    if (index === 1){
+      numeroTel = numeroTel + arrayTel[index] + ') ';
+    } else if (index === 6){
+      numeroTel = numeroTel + arrayTel[index] + '-';
+      
+    } else {
+      numeroTel = numeroTel + arrayTel[index];
+    }
   }
   return numeroTel;
 }
+console.log(generatePhoneNumber([8,4,9,9,6,1,4,5,8,5,6]));
 // Desafio 12
 function triangleCheck() {
 }
