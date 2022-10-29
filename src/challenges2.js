@@ -19,7 +19,6 @@ function generatePhoneNumber(arrayTel) {
   }
   return numeroTel;
 }
-console.log(generatePhoneNumber([8,4,9,9,6,1,4,5,8,5,6]));
 // Desafio 12
 function triangleCheck() {
 }
