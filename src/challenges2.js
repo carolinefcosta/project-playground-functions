@@ -30,10 +30,19 @@ function triangleCheck(lineA, lineB, lineC) {
   }
 }
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(string) {
+  let quantidade = '';
+  let resultado = 0;
+  for (let index = 0; index < quantidade.length; index++){
+    resultado = quantidade[index];
+    if (resultado === 1){
+      resultado = resultado + ' copo de água';
+    } else {
+      resultado + ' copos de água';
+    }
+  }
+  return resultado;
 }
-
 module.exports = {
   generatePhoneNumber,
   hydrate,
