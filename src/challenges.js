@@ -28,17 +28,19 @@ function footballPoints(wins, ties) {
 }
 // Desafio 6
 function highestCount(arrayNumbers) {
-  let maiorNumero = 0;
-  let quant = 0;
+  let maiorNumero = arrayNumbers[0];
   for (let i = 0; i < arrayNumbers.length; i +=1){
     if (arrayNumbers[i] > maiorNumero) {
       maiorNumero = arrayNumbers[i];
-      quant = 1;
-    } else if (arrayNumbers[i] === maiorNumero) {
-      quant ++;
+    }
+  } 
+  let quantidadeRep = 0;
+  for (index = 0; index < arrayNumbers.length; index += 1){
+    if (maiorNumero === arrayNumbers[index]){
+      quantidadeRep += 1;
     }
   }
-  return quant;
+  return quantidadeRep;
 }
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
