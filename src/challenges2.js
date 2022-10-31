@@ -11,8 +11,7 @@ function generatePhoneNumber(arrayTel) {
     if (index === 1){
       numeroTel = numeroTel + arrayTel[index] + ') ';
     } else if (index === 6){
-      numeroTel = numeroTel + arrayTel[index] + '-';
-      
+      numeroTel = numeroTel + arrayTel[index] + '-'; 
     } else {
       numeroTel = numeroTel + arrayTel[index];
     }
@@ -20,9 +19,16 @@ function generatePhoneNumber(arrayTel) {
   return numeroTel;
 }
 // Desafio 12
-function triangleCheck() {
+function triangleCheck(lineA, lineB, lineC) {
+  let cond1 = Math.abs(lineA < lineB + lineC);
+  let cond2 = Math.abs(lineB < lineA + lineC);
+  let cond3 = Math.abs(lineC < lineA + lineB);
+  if (cond1 === true && cond2 === true && cond3 === true) {
+    return true;
+  } else {
+    return false;
+  }
 }
-
 // Desafio 13
 function hydrate() {
   // seu código aqui
