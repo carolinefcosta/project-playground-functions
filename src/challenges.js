@@ -116,11 +116,11 @@ function decode(frase) {
 // Desafio 10
 function techList(tecnologias, pessoa) {
   let objetos = [];
-  if (tecnologias.length === 0 || pessoa === ''){
+  if (tecnologias.length === 0){
     return 'Vázio!';
   }
   let tecno = tecnologias.sort();
-  for (let i = 0; i < tecnologias.length; i++){
+  for (let i = 0; i < tecnologias.length; i += 1){
       objetos.push({
         tech: tecno[i],
         name: pessoa,
