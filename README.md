@@ -1,10 +1,23 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+
+## 💻 Projeto
+
+Projeto desenvolvido no módulo de fundamentos do curso da [Trybe](https://www.betrybe.com/), onde foi implementado várias funções para atender aos requisitos propostos e garantir que todas as funções passem nos testes unitários disponibilizados.
+
+## 🚀 Tecnologias usadas
+
+- JavaScript
+
+## 📌 Habilidades desenvolvidas
+
+Nesse projeto, fui capaz de:
+
+- Escrever códigos em JavaScript que usam variáveis e tipos primitivos;
+- Utilizar conceitos da linguagem como a tipagem dinâmica e operadores lógicos/aritméticos/de atribuição no seu código;
+- Criar códigos que usam estruturas condicionais, como o if/else;
+- Manipular arrays (listas);
+- Utilizar o comando for;
+- Quebrar grandes problemas em pequenos;
+- Utilizar a lógica de programação na resolução de problemas;
+- Manipular objetos;
+- Utilizar o comando for/in;
+- Utilizar funções para organizar e estruturar o seu código;
