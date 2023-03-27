@@ -31,7 +31,7 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 // Desafio 13
 function hydrate(string) {
-  let quantidade = '';
+  let quantidade = 0;
   let resultado = 0;
   for (let index = 0; index < quantidade.length; index++){
     resultado = quantidade[index];
